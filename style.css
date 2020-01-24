@@ -1,10 +1,11 @@
 * {
-    background-image: url('snoop.jpg');
+    background-image: url('snoopbackground.png');
     text-align: center;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center; 
 }.heading {
-    font-family: Arial;
+    font-family: 'Permanent Marker', cursive;
     margin-top:40vh;
     color: aliceblue;
     border-color: black;
@@ -13,6 +14,7 @@
     font-size:1.3em;
     padding:5px 10px;
 }.URL-input {
+    font-family: 'Permanent Marker', cursive;
     border-radius:4px 0px 0px 4px;
     width:30em;
     text-align: left;
@@ -22,6 +24,7 @@
 }.URL-input:focus {
     border:2px solid #0485ff;
 }.convert-button {
+    font-family: 'Permanent Marker', cursive;
     border-radius:0px 4px 4px 0px;
     border:2px solid #0485ff;
     background: #0485ff;

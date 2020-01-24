@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 
 <html><head>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <title>YouTube Downloader</title>
 </head>
 <body>
-    
+    <audio autoplay loop id="myaudio">
+        <source src="backgroundmusic.mp3" type="audio/mp3">
+    </audio>
     <h1 class="heading">Convert Videos with Snoop!</h1> 
-    <input class="URL-input" placeholder="Video URL e.g. https://www.youtube.com/watch?v=MtN1YnoL46Q">
-    <button class="convert-button">Convert</button>
+    <input class="URL-input" placeholder="Video URL e.g. https://www.youtube.com/watch?...">
+    <button class="convert-button">Convert to mp3</button>
 </body>
 </html>
 <script src='script.js'></script> <!-- TODO: Try to download playlist -->
+<script>
+  var audio = document.getElementById("myaudio");
+  audio.volume = 0.08;
+</script>
