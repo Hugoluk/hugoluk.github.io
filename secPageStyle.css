@@ -4,7 +4,6 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center; 
-
 }
 
 .heading {
@@ -14,14 +13,12 @@
     border-color: black;
     border-width: thin;
     text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
-
 } 
 
 .format-select, .convert-button {
     border-radius: 3px;
     text-align: center;
     display: inline; 
-    
 }
 select {
     -moz-appearance: none;
@@ -30,7 +27,6 @@ select {
     border: none;
     width: 120px;
     height: 40px;
-    padding-left: 40px;
     background: #0485ff;
     color: #fff;
     font-family: 'Permanent Marker', cursive;
@@ -39,8 +35,6 @@ select {
     cursor: pointer;
     outline: none;
 }
-
-
 
 .convert-button {
     cursor: pointer;
