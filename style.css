@@ -4,15 +4,19 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center; 
+    
 }.heading {
     font-family: 'Permanent Marker', cursive;
-    margin-top:40vh;
+    margin-top:45vh;
     color: aliceblue;
     border-color: black;
+    border-width: thin;
     text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
-}.URL-input, .convert-button {
+    
+}.URL-input, .redirect-button {
     font-size:1.3em;
     padding:5px 10px;
+    
 }.URL-input {
     font-family: 'Permanent Marker', cursive;
     border-radius:4px 0px 0px 4px;
@@ -21,12 +25,16 @@
     border:2px solid #EEEEEE;
     background: #EEEEEE;
     outline:none;
+    
 }.URL-input:focus {
     border:2px solid #0485ff;
-}.convert-button {
+
+}.redirect-button {
     font-family: 'Permanent Marker', cursive;
     border-radius:0px 4px 4px 0px;
     border:2px solid #0485ff;
     background: #0485ff;
     color:white;
+    cursor: pointer;
+    outline: none;
 }

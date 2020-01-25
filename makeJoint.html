@@ -2,16 +2,20 @@
 
 <html><head>
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
-    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="secPageStyle.css">
+    <title>Show some rolling skills</title>
 </head>
 <body>
     <audio autoplay loop id="myaudio">
         <source src="backgroundmusic.mp3" type="audio/mp3">
     </audio>
-    <h1 class="heading">Convert Videos with Snoop!</h1> 
-    <input class="URL-input" placeholder="Video URL e.g. https://www.youtube.com/watch?...">
-    <button class="redirect-button">Roll it!</button>
+    <h1 class="heading">Choose your rolling paper:</h1> 
+    <div class="format-select" id="format">
+        <select>
+            <option value="0">MP3</option>
+            <option value="1">MP4</option>
+        </select>
+    <button class="convert-button">Smoke it!</button>
 </body>
 </html>
 <script src='script.js'></script> <!-- TODO: Try to download playlist -->
