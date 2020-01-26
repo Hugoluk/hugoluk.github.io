@@ -14,7 +14,7 @@ app.listen(PORT, () => {
 });
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, 'client/index.html'));
+    res.sendFile(path.join(__dirname, '../client', 'index.html'));
 });
 
 app.get('/form', (req,res) => {
