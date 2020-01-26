@@ -12,7 +12,7 @@ convertBtn.addEventListener('click', () => {
 
 function sendFormat(URL, format) {
     window.location.href = `/form?format=${format}`;
-    console.log('format1: ' + format);
+    console.log("Url: " + `/form?format=${format}`);
     sendURL(URL);
 }
 
