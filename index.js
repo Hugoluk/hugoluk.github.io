@@ -8,13 +8,14 @@ var vidTitle = "video";
 var format = "";
 
 app.use(cors());
+app.use(express.static("client"));
 
 app.listen(PORT, () => {
     console.log('Server Works !!! At port 4000');
 });
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, '../client', 'index.html'));
+    res.sendFile(path.join(__dirname, 'client/index.html'));
 });
 
 app.get('/form', (req,res) => {
