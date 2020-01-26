@@ -6,6 +6,7 @@ convertBtn.addEventListener('click', () => {
     var URL = getUrlVars()["URL"];
     var selectM = document.getElementById("selectMenu");
     var format = selectM.options[selectM.selectedIndex].text;
+    console.log('server: ' + server);
     sendFormat(URL, format);
 });
 
