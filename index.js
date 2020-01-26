@@ -19,7 +19,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/form', (req,res) => {
-    format = req.query.format.toLowerCase();
+    format = req.query.format;
 });
 
 app.get('/download', (req,res) => {
@@ -29,10 +29,8 @@ app.get('/download', (req,res) => {
     ytdl.getInfo(URL, function(err, info) {
         title = info.title;
         vidTitle = title;
-        console.log("inside: " + vidTitle);
         });
     
-    console.log("fun: " + vidTitle);
     res.header('Content-Disposition', `attachment; filename=${vidTitle}.${format}`); 
     ytdl(URL, {
       format: `${format}`
