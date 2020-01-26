@@ -11,12 +11,12 @@ convertBtn.addEventListener('click', () => {
 });
 
 function sendFormat(URL, format) {
-    window.location.href = `${server}/form?format=${format}`;
+    window.location.href = `/form?format=${format}`;
     sendURL(URL);
 }
 
 function sendURL(URL) {
-    window.location.href = `${server}/download?URL=${URL}`;
+    window.location.href = `/download?URL=${URL}`;
 }
 
 function getUrlVars() {
