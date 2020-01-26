@@ -6,12 +6,13 @@ convertBtn.addEventListener('click', () => {
     var URL = getUrlVars()["URL"];
     var selectM = document.getElementById("selectMenu");
     var format = selectM.options[selectM.selectedIndex].text;
-    console.log('server: ' + server);
+    console.log('format: ' + format);
     sendFormat(URL, format);
 });
 
 function sendFormat(URL, format) {
     window.location.href = `/form?format=${format}`;
+    console.log('format1: ' + format);
     sendURL(URL);
 }
 
