@@ -1,7 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const ytdl = require('ytdl-core');
-const app = express();
+app = express();
+var vidTitle = "video";
 var format = "";
 
 app.use(cors());
@@ -15,9 +16,17 @@ app.get('/form', (req,res) => {
 });
 
 app.get('/download', (req,res) => {
-    console.log("Format: " + format)
     var URL = req.query.URL;
-    res.header('Content-Disposition', `attachment; filename=video.${format}`); //TODO: replace "video" with videoname
+    //replace "video" with videoname
+    //problem: ytdl.getinfo needs some time, so programm needs to wait somehow
+    ytdl.getInfo(URL, function(err, info) {
+        title = info.title;
+        vidTitle = title;
+        console.log("inside: " + vidTitle);
+        });
+    
+    console.log("fun: " + vidTitle);
+    res.header('Content-Disposition', `attachment; filename=${vidTitle}.${format}`); 
     ytdl(URL, {
       format: `${format}`
     }).pipe(res);

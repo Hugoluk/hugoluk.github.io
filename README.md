@@ -11,3 +11,7 @@
 -Meine mp3-Sammlung auf Server laden, tagbar und über Ytdownloader erweiterbar.
 
 -Beliebig viele Songs der mp3-Sammlung auswählbar und downloadbar.
+
+-Beim Warten auf File "Drop it like it's hot" gif abspielen.
+
+-TODO: WICHTIG! ERROR HANDLING FEHLT NOCH GANZ!!!
