@@ -2,12 +2,13 @@ const express = require('express');
 const cors = require('cors');
 const ytdl = require('ytdl-core');
 app = express();
+var PORT = process.env.PORT || 4000; //Portnumber Heroku gives us or 4000
 var vidTitle = "video";
 var format = "";
 
 app.use(cors());
 
-app.listen(4000, () => {
+app.listen(PORT, () => {
     console.log('Server Works !!! At port 4000');
 });
 
