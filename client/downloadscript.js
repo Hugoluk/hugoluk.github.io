@@ -1,5 +1,5 @@
-var PORT = process.env.PORT || 4000;
-var server = location.host + ':' + PORT;
+//var PORT = process.env.PORT || 4000;
+var server = location.host; // + ':' + PORT;
 var convertBtn = document.querySelector('.convert-button');
 
 convertBtn.addEventListener('click', () => {
